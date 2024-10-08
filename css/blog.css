@@ -5,10 +5,9 @@ body {
 /*header+hero*/
 
 .hero_background {
-    min-width: 635px;
     background-image:
             linear-gradient(360deg, rgba(8, 18, 38, 0) 0%, rgba(8, 18, 38, 0.7) 33%),
-            url('../img/Image of a bad banner_Massage.jpg');
+            url('../img/image-banner-massage.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -53,27 +52,27 @@ body {
 }
 
 .questions_block_1{
-    background-image: url("../img/blog_questions/Preview_1.jpg");
+    background-image: url("../img/blog-questions/preview-1.jpg");
 }
 
 .questions_block_2{
-    background-image: url("../img/blog_questions/Preview_2.jpg");
+    background-image: url("../img/blog-questions/preview-2.jpg");
 }
 
 .questions_block_3{
-    background-image: url("../img/blog_questions/Preview_3.jpg");
+    background-image: url("../img/blog-questions/preview-3.jpg");
 }
 
 .questions_block_4{
-    background-image: url("../img/blog_questions/Preview_4.jpg");
+    background-image: url("../img/blog-questions/preview-4.jpg");
 }
 
 .questions_block_5{
-    background-image: url("../img/blog_questions/Preview_5.jpg");
+    background-image: url("../img/blog-questions/preview-5.jpg");
 }
 
 .questions_block_6{
-    background-image: url("../img/blog_questions/Preview_6.jpg");
+    background-image: url("../img/blog-questions/preview-6.jpg");
 }
 
 .questions_date {
@@ -122,7 +121,7 @@ body {
 /*section locations*/
 
 .location {
-    background-image: url("../img/blog_locations_bg.jpg");
+    background-image: url("../img/blog-locations-bg.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
