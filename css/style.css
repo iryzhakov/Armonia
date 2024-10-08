@@ -223,9 +223,18 @@ h1, h2, h3, p {
 .footer__tittle {
     text-transform: uppercase;
     color: var(--dark-blue);
+    border-bottom: 1px solid var(--dark-blue);
+}
+
+a .footer__tittle {
+    border-bottom: none;
 }
 
 .footer-link {
     font-size: 16px;
     color: var(--dark-blue);
+}
+
+.footer__social {
+    fill: var(--dark-blue);
 }
