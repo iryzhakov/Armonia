@@ -1,4 +1,5 @@
 @charset "UTF-8";
+
 /* TODO используй main для элементов, которые встречатся на всем сайте или на большинстве страниц, типа футера */
 :root {
         --font-family: "Ubuntu", sans-serif;
@@ -13,8 +14,8 @@
         --black: #000;
         --whatsapp: #25d366;
         --whatsapp-2: #39a861;
-        --warm-white-20: rgba(251, 249, 245, 0.2);
-        --nakladyvayuschiesya-menyu: rgba(8, 18, 38, 0.8);
+        --warm-white-20: rgb(251 249 245 / 20%);
+        --nakladyvayuschiesya-menyu: rgb(8 18 38 / 80%);
         --gap: 8px;
 }
 
@@ -30,6 +31,8 @@ html {
 
 body {
     font-family: var(--font-family);
+
+    /* TODO нахера 22px ?) для боди */
     font-size: 22px;
     font-weight: 400;
 
@@ -50,30 +53,30 @@ h1, h2, h3, p {
 }
 
 @font-face {
-    font-family: 'Ubuntu';
+    font-family: Ubuntu;
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
     src: local('Ubuntu-Regular'),
     url('../fonts/Ubuntu-Regular.ttf') format('truetype');
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap;
 }
 
 @font-face {
-    font-family: 'Noto-Serif-Display-Regular';
+    font-family: Noto-Serif-Display-Regular;
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
     src: local('Noto Serif Display Regular'),
     url('../fonts/NotoSerifDisplay-Regular.ttf') format('truetype');
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap;
 }
 
 @font-face {
-    font-family: 'Noto-Serif-Display-Italic';
-    src: local('Noto Serif Display Italic'),
-    url('../fonts/NotoSerifDisplay-Italic.ttf') format('truetype');
+    font-family: Noto-Serif-Display-Italic;
     font-weight: 400;
     font-style: normal;
     font-display: swap;
+    src: local('Noto Serif Display Italic'),
+    url('../fonts/NotoSerifDisplay-Italic.ttf') format('truetype');
 }
 
 .list-reset {
@@ -83,10 +86,10 @@ h1, h2, h3, p {
 }
 
 .btn-reset {
-    padding: 0;
-    border: none;
-    background-color: transparent;
     cursor: pointer;
+    padding: 0;
+    background-color: transparent;
+    border: none;
 }
 
 .btn-whatsapp {
@@ -104,22 +107,22 @@ h1, h2, h3, p {
 }
 
 .btn-whatsapp:hover {
-    background-color: var(--whatsapp-2);
     color: var(--warm-white);
+    background-color: var(--whatsapp-2);
     fill: var(--warm-white);
 }
 
 .btn-whatsapp:active {
-    background-color: var(--whatsapp);
     color: var(--warm-white);
+    background-color: var(--whatsapp);
     fill: var(--warm-white);
 }
 
 .btn-scnd {
-    border: 1px solid var(--warm-white);
     padding: 15px 10px;
     color: var(--warm-white);
     background: transparent;
+    border: 1px solid var(--warm-white);
     outline: none;
     transition: background-color 0.3s ease, border-color 0.3s ease;
 }
@@ -129,21 +132,21 @@ h1, h2, h3, p {
 }
 
 .btn-scnd:hover {
-    border-color: var(--brown);
     background-color: var(--brown);
+    border-color: var(--brown);
 }
 
 .btn-scnd:active {
-    border-color: var(--ginger);
     background-color: var(--ginger);
+    border-color: var(--ginger);
 }
 
 .btn-scnd-sml {
-    border: 1px solid var(--warm-white);
-    padding: 10px 15px 10px 15px;
+    padding: 10px 15px;
     font-size: 16px;
     color: var(--warm-white);
     background: transparent;
+    border: 1px solid var(--warm-white);
     outline: none;
     transition: background-color 0.3s ease, border-color 0.3s ease;
 }
@@ -153,13 +156,13 @@ h1, h2, h3, p {
 }
 
 .btn-scnd-sml:hover {
-    border-color: var(--brown);
     background-color: var(--brown);
+    border-color: var(--brown);
 }
 
 .btn-scnd-sml:active {
-    border-color: var(--ginger);
     background-color: var(--ginger);
+    border-color: var(--ginger);
 }
 
 .btn-scnd-sml svg {
@@ -168,11 +171,11 @@ h1, h2, h3, p {
 
 .header {
     font-family: var(--font-family);
-    font-weight: 400;
     font-size: 22px;
-    text-transform: uppercase;
-    text-align: center;
+    font-weight: 400;
     color: var(--warm-white);
+    text-align: center;
+    text-transform: uppercase;
 }
 
 .header__nav {
@@ -185,32 +188,32 @@ h1, h2, h3, p {
 
 .hero__tittle {
     font-family: var(--second-family);
-    font-weight: 400;
     font-size: 100px;
-    letter-spacing: -0.01em;
-    text-transform: uppercase;
-    text-align: center;
+    font-weight: 400;
     color: var(--ginger);
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: -0.01em;
 }
 
 .hero__tittle-text {
     margin-bottom: 80px;
     font-family: var(--second-family-italic);
-    font-weight: 400;
     font-size: 50px;
-    text-align: center;
+    font-weight: 400;
     color: var(--ginger);
+    text-align: center;
 }
 
 .hero__text {
     max-width: 690px;
     margin: 0 auto;
     font-family: var(--font-family);
-    font-weight: 400;
     font-size: 22px;
+    font-weight: 400;
     line-height: 123%;
-    text-align: center;
     color: var(--warm-white);
+    text-align: center;
 }
 
 .footer {
@@ -218,13 +221,13 @@ h1, h2, h3, p {
 }
 
 .footer__contant-top {
+    padding: 10px 0;
     border-bottom: 1px solid var(--dark-blue);
-    padding: 10px 0px;
 }
 
 .footer__tittle {
-    text-transform: uppercase;
     color: var(--dark-blue);
+    text-transform: uppercase;
     border-bottom: 1px solid var(--dark-blue);
 }
 
