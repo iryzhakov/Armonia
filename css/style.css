@@ -173,6 +173,10 @@ h1, h2, h3, p {
     color: var(--warm-white);
 }
 
+.header__nav {
+    background-color: transparent !important;
+}
+
 .nav__list {
     color: var(--warm-white);
 }
@@ -205,4 +209,23 @@ h1, h2, h3, p {
     line-height: 123%;
     text-align: center;
     color: var(--warm-white);
+}
+
+.footer {
+    color: var(--dark-blue);
+}
+
+.footer__contant-top {
+    border-bottom: 1px solid var(--dark-blue);
+    padding: 10px 0px;
+}
+
+.footer__tittle {
+    text-transform: uppercase;
+    color: var(--dark-blue);
+}
+
+.footer-link {
+    font-size: 16px;
+    color: var(--dark-blue);
 }
