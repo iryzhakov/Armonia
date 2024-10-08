@@ -1,0 +1,208 @@
+:root {
+        --font-family: "Ubuntu", sans-serif;
+        --second-family: "Noto-Serif-Display-Regular", sans-serif;
+        --second-family-italic: "Noto-Serif-Display-Italic", sans-serif;
+        --third-family: "Rubik", sans-serif;
+        --ginger: #cb945c;
+        --brown: #7a5e4d;
+        --dark-blue: #081226;
+        --warm-white: #fbf9f5;
+        --white: #fff;
+        --black: #000;
+        --whatsapp: #25d366;
+        --whatsapp-2: #39a861;
+        --warm-white-20: rgba(251, 249, 245, 0.2);
+        --nakladyvayuschiesya-menyu: rgba(8, 18, 38, 0.8);
+        --gap: 8px;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: var(--font-family);
+    font-size: 22px;
+    font-weight: 400;
+
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'Ubuntu';
+    src: local('Ubuntu-Regular'),
+    url('../fonts/Ubuntu-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Noto-Serif-Display-Regular';
+    src: local('Noto Serif Display Regular'),
+    url('../fonts/NotoSerifDisplay-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Noto-Serif-Display-Italic';
+    src: local('Noto Serif Display Italic'),
+    url('../fonts/NotoSerifDisplay-Italic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+.list-reset {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.btn-reset {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.btn-whatsapp {
+    padding: 15px 12.5px;
+    color: var(--dark-blue);
+    background-color: var(--warm-white);
+    outline: none;
+    fill: var(--dark-blue);
+    transition: background-color 0.3s ease, border-color 0.3s ease, fill 0.3s ease, color 0.3s ease;
+}
+
+.btn-whatsapp:focus {
+    background-color: var(--warm-white);
+    outline: 1px solid var(--whatsapp);
+}
+
+.btn-whatsapp:hover {
+    background-color: var(--whatsapp-2);
+    color: var(--warm-white);
+    fill: var(--warm-white);
+}
+
+.btn-whatsapp:active {
+    background-color: var(--whatsapp);
+    color: var(--warm-white);
+    fill: var(--warm-white);
+}
+
+.btn-scnd {
+    border: 1px solid var(--warm-white);
+    padding: 15px 10px;
+    color: var(--warm-white);
+    background: transparent;
+    outline: none;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.btn-scnd:focus {
+    background-color: 5px solid var(--brown);
+}
+
+.btn-scnd:hover {
+    border-color: var(--brown);
+    background-color: var(--brown);
+}
+
+.btn-scnd:active {
+    border-color: var(--ginger);
+    background-color: var(--ginger);
+}
+
+.btn-scnd-sml {
+    border: 1px solid var(--warm-white);
+    padding: 10px 15px 10px 15px;
+    font-size: 16px;
+    color: var(--warm-white);
+    background: transparent;
+    outline: none;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.btn-scnd-sml:focus {
+    background-color: 5px solid var(--brown);
+}
+
+.btn-scnd-sml:hover {
+    border-color: var(--brown);
+    background-color: var(--brown);
+}
+
+.btn-scnd-sml:active {
+    border-color: var(--ginger);
+    background-color: var(--ginger);
+}
+
+.btn-scnd-sml svg {
+    margin-left: 15px;
+}
+
+.header {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 22px;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--warm-white);
+}
+
+.nav__list {
+    color: var(--warm-white);
+}
+
+.hero__tittle {
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 100px;
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--ginger);
+}
+
+.hero__tittle-text {
+    margin-bottom: 80px;
+    font-family: var(--second-family-italic);
+    font-weight: 400;
+    font-size: 50px;
+    text-align: center;
+    color: var(--ginger);
+}
+
+.hero__text {
+    max-width: 690px;
+    margin: 0 auto;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 123%;
+    text-align: center;
+    color: var(--warm-white);
+}

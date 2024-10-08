@@ -1,0 +1,171 @@
+body {
+    color: var(--warm-white);
+}
+
+/*header+hero*/
+
+.hero_background {
+    min-width: 635px;
+    background-image:
+            linear-gradient(360deg, rgba(8, 18, 38, 0) 0%, rgba(8, 18, 38, 0.7) 33%),
+            url('../img/Image of a bad banner_Massage.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/*section questions*/
+
+.questions {
+    background-color: var(--dark-blue);
+}
+
+.questions__list {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.questions_contant {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    min-height: 453px;
+    margin-bottom: 1rem;
+    padding: 40px;
+    background-color: rgba(0, 0, 0, 0.3);
+    background-size: cover;
+    background-position: center;
+}
+
+.questions_contant::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(360deg, rgba(8, 18, 38, 0) 0%, rgba(8, 18, 38, 0.7) 100%);
+    transform: rotate(-180deg);
+    z-index: 0;
+}
+
+.questions_block_1{
+    background-image: url("../img/blog_questions/Preview_1.jpg");
+}
+
+.questions_block_2{
+    background-image: url("../img/blog_questions/Preview_2.jpg");
+}
+
+.questions_block_3{
+    background-image: url("../img/blog_questions/Preview_3.jpg");
+}
+
+.questions_block_4{
+    background-image: url("../img/blog_questions/Preview_4.jpg");
+}
+
+.questions_block_5{
+    background-image: url("../img/blog_questions/Preview_5.jpg");
+}
+
+.questions_block_6{
+    background-image: url("../img/blog_questions/Preview_6.jpg");
+}
+
+.questions_date {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--ginger);
+}
+
+.quextions_text {
+    margin-top: auto;
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 40px;
+    color: var(--warm-white);
+    z-index: 1;
+}
+
+.questions_btn {
+    padding: 15px 54px;
+}
+
+.pagination ul {
+    list-style: none;
+    padding: 0;
+    display: inline-flex;
+}
+
+.pagination li {
+    margin: 0 5px;
+}
+
+.pagination a {
+    text-decoration: none;
+    padding: 10px 15px;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    color: #333;
+}
+
+.pagination .active {
+    background-color: rgba(0, 0, 0, 0.3);
+    color: var(--warm-white);
+}
+
+/*section locations*/
+
+.location {
+    background-image: url("../img/blog_locations_bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    --offsets: 20px;
+}
+
+.location__container {
+    max-width: 1164px;
+}
+
+.location__tittle {
+    margin-right: 20px;
+    flex-grow: 1;
+    font-family: var(--second-family);
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 50px;
+    color: var(--warm-white);
+    border-bottom: 1px solid var(--warm-white);
+}
+
+.location__item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.location__item:not(:last-child) {
+    max-width: 546px;
+}
+
+
+.item__tittle {
+    padding-bottom: 9px;
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+    flex-grow: 1;
+    font-family: var(--second-family);
+    font-size: 25px;
+    color: var(--ginger);
+    border-bottom: 1px solid var(--warm-white);
+}
+
+.item-btn {
+    align-self: flex-start;
+}
