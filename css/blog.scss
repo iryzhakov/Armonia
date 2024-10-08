@@ -23,6 +23,8 @@ body {
 /* section questions */
 
 .questions {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
     background-color: var(--dark-blue);
 }
 
@@ -31,6 +33,7 @@ body {
     padding: 0;
 }
 
+/* TODO исправить грамматические ошибки не contant а content */
 .questions_contant {
     position: relative;
     display: flex;
@@ -56,6 +59,7 @@ body {
     background: linear-gradient(360deg, rgb(8 18 38 / 0%) 0%, rgb(8 18 38 / 70%) 100%);
 }
 
+/* TODO и как потом этим управлять ?) Вставляй картинки через <img в коде айтема */
 .questions_block_1{
     background-image: url("../img/blog-questions/preview-1.jpg");
 }
@@ -87,6 +91,7 @@ body {
     color: var(--ginger);
 }
 
+/* TODO исправить орфографию */
 .quextions_text {
     z-index: 1;
     margin-top: auto;

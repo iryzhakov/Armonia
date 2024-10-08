@@ -54,18 +54,29 @@
             </div>
         </section>
     </div>
-    <section id="questions" class="questions pt-5 pb-5">
+    <section class="questions">
+        <!--TODO отступы не по дизайну-->
         <div class="container">
-            <ul class="questions__list row justify-content-center questions-container mb-3">
-                <li class="questions__item col-xxl-4 col-md-6 col-12 position-relative p-2">
+            <div class="row questions__list justify-content-center questions-container mb-3">
+                <div class="questions__item col-xl-4 col-md-6 col-12 position-relative p-2">
+                    <!--TODO лучше xl. Посмотри по бутстрапу какие это разрешения-->
                     <div class="questions__card">
-                    <div class="questions_contant questions_block_1 p-sm-4 p-xl-5 p-4">
-                        <time datetime="2024-10-07" class="questions_date">10.07.2024</time>
-                        <h3 class="quextions_text">What are the symptoms?</h3>
+                        <!-- TODO зачем эта вложенность ? -->
+                        <div class="questions_contant questions_block_1 p-sm-4 p-xl-5 p-4">
+                            <!-- TODO тут у тебя одни брейкпоинты, выше другие, по идее другие-->
+                            <!-- TODO отступ в дизайне и у тебя разные-->
+                            <div class="questions_date">10.07.2024</div>
+                            <!--TODO лишнее time как по мне-->
+                            <h3 class="quextions_text">What are the symptoms?</h3>
+                            <!-- TODO H1-H6 не использовать для заголовков в превью -->
+                        </div>
+                        <button class="questions_btn btn-scnd">Read more</button>
+                        <!-- TODO button заменить на ссылку обычную. -->
+                        <!-- TODO Ссылка должна быть как для read more так и при нажатии на всю карточку / картинку -->
+                        <!-- TODO не забываем про отступы в коде. Форматируй код-->
                     </div>
-                    <button class="questions_btn btn-scnd">Read more</button>
-                    </div>
-                </li>
+                    <!-- TODO отступ вниз отличается от дизайна -->
+                </div>
                 <li class="questions__item col-xxl-4 col-md-6 col-12 position-relative p-2">
                     <div class="questions_contant questions_block_2 p-sm-4 p-xl-5 p-4">
                         <time datetime="2024-10-07" class="questions_date">10.07.2024</time>
@@ -101,11 +112,13 @@
                     </div>
                     <button class="questions_btn btn-scnd">Read more</button>
                 </li>
-            </ul>
+            </div>
             <nav id="pagination" class="pagination justify-content-center"></nav>
+            <!--TODO пагнация ни как в дизайне. JS не нужен тут, чисто отверстать как дизайне -->
         </div>
     </section>
     <section id="location" class="location pb-5 pt-5">
+        <!-- TODO зачем неиспользуемые ID ? -->
         <div class="col-xxl-8 container d-flex flex-wrap">
             <div class="w-100 mb-5 d-flex flex-wrap justify-content-between">
             <h2 class="location__tittle mb-md-0 mb-2 col-md-auto col-12">Locations</h2>
@@ -116,8 +129,9 @@
                 Book WhatsApp
             </button>
             </div>
-        <ul class="list-reset location__list row justify-content-between">
-            <li class="list-reset location__item mb-3 col-lg-5 col-md-6 col-sm-12">
+        <div class="list-reset location__list row justify-content-between">
+            <div class="list-reset location__item mb-3 col-lg-5 col-md-6 col-sm-12">
+                <!-- TODO почему col-lg-5  вдруг стало?) -->
                 <h3 class="item__tittle d-inline-block order-0">Media City Branch</h3>
                 <button class="btn-reset item-btn btn-scnd-sml order-md-0 order-1 col-12 col-md-auto">
                     Book now
@@ -127,7 +141,7 @@
                 </button>
                 <p class="item__text">La Suite Dubai Hotel & Apartments, 7th Floor, Sidra Tower, Sheikh Zayed Road, Media City, Dubai, UAE</p>
                 <a class="item__link mb-2 mb-md-0" href="tel:+971586850992" title="+971 58 685 0992">+971 58 685 0992</a>
-            </li>
+            </div>
             <li class="list-reset location__item mb-3 col-lg-5 col-md-6 col-sm-12">
                 <h3 class="item__tittle d-inline-block order-0">Media City Branch</h3>
                 <button class="btn-reset item-btn btn-scnd-sml order-md-0 order-1 col-12 col-md-auto">
@@ -194,7 +208,7 @@
                 <p class="item__text">La Suite Dubai Hotel & Apartments, 7th Floor, Sidra Tower, Sheikh Zayed Road, Media City, Dubai, UAE</p>
                 <a class="item__link mb-sm-2 mb-md-0" href="tel:+971586850992" title="+971 58 685 0992">+971 58 685 0992</a>
             </li>
-        </ul>
+        </div>
         </div>
     </section>
     <footer class="footer bg-light py-4">
