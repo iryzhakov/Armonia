@@ -245,3 +245,16 @@ a .footer__tittle {
 .footer__social {
     fill: var(--dark-blue);
 }
+
+
+.container {
+    --bs-gutter-x: 1.25rem;
+
+    @media (min-width: 1400px) {
+        max-width: 1400px;
+    }
+}
+
+.row {
+    --bs-gutter-x: 1.25rem;
+}
