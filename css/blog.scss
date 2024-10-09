@@ -23,7 +23,7 @@ body {
 /* section questions */
 
 .questions {
-    padding-top: 5rem;
+    padding-top: 4rem;
     padding-bottom: 5rem;
     background-color: var(--dark-blue);
 }
@@ -33,24 +33,22 @@ body {
     padding: 0;
 }
 
-/* TODO исправить грамматические ошибки не contant а content */
-.questions_contant {
+.questions_content {
     position: relative;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     min-height: 453px;
-    margin-bottom: 1rem;
     padding: 40px;
     background-color: rgb(0 0 0 / 30%);
     background-position: center;
     background-size: cover;
 }
 
-.questions_contant::after {
+.questions_content::before {
     content: "";
     position: absolute;
-    z-index: 0;
+    z-index: 1;
     top: 0;
     right: 0;
     bottom: 0;
@@ -59,29 +57,13 @@ body {
     background: linear-gradient(360deg, rgb(8 18 38 / 0%) 0%, rgb(8 18 38 / 70%) 100%);
 }
 
-/* TODO и как потом этим управлять ?) Вставляй картинки через <img в коде айтема */
-.questions_block_1{
-    background-image: url("../img/blog-questions/preview-1.jpg");
-}
-
-.questions_block_2{
-    background-image: url("../img/blog-questions/preview-2.jpg");
-}
-
-.questions_block_3{
-    background-image: url("../img/blog-questions/preview-3.jpg");
-}
-
-.questions_block_4{
-    background-image: url("../img/blog-questions/preview-4.jpg");
-}
-
-.questions_block_5{
-    background-image: url("../img/blog-questions/preview-5.jpg");
-}
-
-.questions_block_6{
-    background-image: url("../img/blog-questions/preview-6.jpg");
+.questions__card img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .questions_date {
@@ -89,20 +71,33 @@ body {
     font-size: 16px;
     font-weight: 400;
     color: var(--ginger);
+    z-index: 1;
 }
 
 /* TODO исправить орфографию */
-.quextions_text {
-    z-index: 1;
+.questions_text {
     margin-top: auto;
     font-family: var(--second-family);
     font-size: 40px;
     font-weight: 400;
+    line-height: 1.2;
     color: var(--warm-white);
+    z-index: 1;
 }
 
 .questions_btn {
+    max-width: 219px;
     padding: 15px 54px;
+}
+
+.questions_btn::after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
 }
 
 .pagination ul {
@@ -131,8 +126,8 @@ body {
 /* section locations */
 
 .location {
-    --offsets: 20px;
-
+    padding-top: 2.5rem;
+    padding-bottom: 5rem;
     background-image: url("../img/blog-locations-bg.jpg");
     background-repeat: no-repeat;
     background-position: center;
@@ -190,7 +185,7 @@ body {
         font-size: 60px !important;
     }
 
-    h2, h3 {
+    h3 {
         font-size: 25px !important;
     }
 
