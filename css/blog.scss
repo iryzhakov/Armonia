@@ -23,11 +23,6 @@ body {
     background-color: var(--dark-blue);
 }
 
-.questions__list {
-    margin: 0;
-    padding: 0;
-}
-
 .questions_content {
     position: relative;
     display: flex;
@@ -144,10 +139,15 @@ body {
     border-bottom: 1px solid var(--warm-white);
 }
 
+.location__list {
+    --bs-gutter-y: 2.125rem;
+}
+
 .location__item {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding: 0;
 }
 
 .location__item:not(:last-child) {
