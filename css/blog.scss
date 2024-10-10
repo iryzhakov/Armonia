@@ -18,7 +18,7 @@ body {
 /* section questions */
 
 .questions {
-    padding-top: 4rem;
+    padding-top: 5rem;
     padding-bottom: 5rem;
     background-color: var(--dark-blue);
 }
@@ -124,8 +124,8 @@ body {
     background-size: cover;
 }
 
-.location__container {
-    max-width: 1164px;
+.location__tittle-block {
+    margin-bottom: 2rem;
 }
 
 .location__tittle {
@@ -137,10 +137,6 @@ body {
     color: var(--warm-white);
     text-transform: uppercase;
     border-bottom: 1px solid var(--warm-white);
-}
-
-.location__list {
-    --bs-gutter-y: 2.125rem;
 }
 
 .location__item {
@@ -166,9 +162,14 @@ body {
     border-bottom: 1px solid var(--warm-white);
 }
 
+.item__text {
+    line-height: 1.2;
+}
+
 .item-btn {
     align-self: flex-start;
     margin-bottom: 1rem;
+    text-align: center;
 }
 
 .item__link {
@@ -180,11 +181,28 @@ body {
         font-size: 60px !important;
     }
 
-    h3 {
+    .hero__tittle-text h3 {
         font-size: 25px !important;
     }
 
-    p {
+    p, .item__link {
         font-size: 16px !important;
+    }
+
+    .container {
+        --bs-gutter-x: 2.5rem;
+    }
+
+    .hero, .questions, .location {
+        padding-top: 2.5rem;
+        padding-bottom: 2.5rem;
+    }
+
+    .questions__card {
+        margin-bottom: 1.5rem;
+    }
+
+    .item__tittle {
+        margin-bottom: 0.5rem;
     }
 }
