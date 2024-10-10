@@ -281,4 +281,8 @@ a .footer__tittle {
     font-weight: 400;
     font-size: 16px;
     color: var(--warm-white);
+
+    @media (max-width: 1560px) {
+        display: none;
+    }
 }
