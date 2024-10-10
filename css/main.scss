@@ -255,8 +255,30 @@ a .footer__tittle {
     @media (min-width: 1400px) {
         max-width: 1400px;
     }
+
+    @media (max-width: 768px) {
+        --bs-gutter-x: 2.5rem;
+    }
+
 }
 
 .row {
     --bs-gutter-x: 1.25rem;
+}
+
+.top-button {
+    position: fixed;
+    right: 10%;
+    top: 65%;
+    width: 66px;
+    height: 66px;
+    text-align: center;
+    border-radius: 100px;
+    border: 1px solid var(--warm-white);
+    font-family: var(--second-family);
+    font-style: italic;
+    line-height: 3.5;
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--warm-white);
 }
