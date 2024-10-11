@@ -92,7 +92,6 @@ h1, h2, h3, p {
 .btn-whatsapp {
     padding: 15px 12.5px;
     color: var(--dark-blue);
-    line-height: 1;
     background-color: var(--warm-white);
     outline: none;
     fill: var(--dark-blue);
@@ -143,7 +142,6 @@ h1, h2, h3, p {
 .btn-scnd-sml {
     padding: 10px 15px;
     font-size: 16px;
-    line-height: 1;
     color: var(--warm-white);
     background: transparent;
     border: 1px solid var(--warm-white);
@@ -256,7 +254,7 @@ a .footer__tittle {
         max-width: 1400px;
     }
 
-    @media (max-width: 768px) {
+    @media (max-width: 767.98px) {
         --bs-gutter-x: 2.5rem;
     }
 
@@ -279,7 +277,7 @@ a .footer__tittle {
     font-style: italic;
     line-height: 3.5;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 1rem;
     color: var(--warm-white);
 
     @media (max-width: 1560px) {
