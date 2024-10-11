@@ -31,8 +31,6 @@ html {
 
 body {
     font-family: var(--font-family);
-    font-size: 22px;/* TODO нахера 22px ?) для боди */
-    font-weight: 400;/* TODO нахера 400 ?) */
 }
 
 a {
@@ -113,6 +111,30 @@ h1, h2, h3, p {
     color: var(--warm-white);
     background-color: var(--whatsapp);
     fill: var(--warm-white);
+}
+
+.btn-first {
+    padding: 15px 10px;
+    line-height: 1;
+    color: var(--dark-blue);
+    background: var(--warm-white);
+    outline: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-first:focus {
+    background-color: var(--brown);
+    color: var(--warm-white);
+}
+
+.btn-first:hover {
+    background-color: var(--brown);
+    color: var(--warm-white);
+}
+
+.btn-first:active {
+    background-color: var(--ginger);
+    color: var(--warm-white);
 }
 
 .btn-scnd {
