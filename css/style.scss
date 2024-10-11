@@ -6,6 +6,8 @@
 @import "main";
 /* TODO Пока будем формировать для каждой страницы свой файл scss */
 @import "location-block";
+
+@import "choose-options";
 /* TODO Если блок к примеру используется в двух шаблонах,
     то создавай отдельный scss для такого блока и испортируй его в те 2 шаблона.
     @import "block-big-preview";*/
