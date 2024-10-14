@@ -36,10 +36,19 @@ body {
     padding-top: 5rem;
     padding-bottom: 5rem;
     background-color: var(--dark-blue);
+
+    @media (max-width: 767.98px) {
+        padding-top: 2.5rem;
+        padding-bottom: 2.5rem;
+    }
 }
 
 .questions__block {
     margin-bottom: 5rem;
+
+    @media (max-width: 767.98px) {
+        margin-bottom: 2.5rem;
+    }
 }
 
 .questions__tittle {
@@ -54,8 +63,17 @@ body {
     line-height: 123%;
 }
 
+.block__photo {
+    width: 50%;
+    height: fit-content;
+}
+
 .treatmens {
     margin-bottom: 5rem;
+
+    @media (max-width: 767.98px) {
+        margin-bottom: 2.5rem;
+    }
 }
 
 .treatmens__tittle-block {
@@ -71,5 +89,31 @@ body {
     color: var(--warm-white);
     text-transform: uppercase;
     border-bottom: 1px solid var(--warm-white);
+
 }
+
+.treatmens__link::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.treatmens__button {
+    padding: 15px 69px;
+}
+
+@media  (max-width: 991.78px) {
+
+    h1, h2 {
+    font-size: 40px !important;
+    }
+    p {
+        font-size: 16px !important;
+    }
+}
+
+
 
