@@ -68,6 +68,8 @@ body {
     height: fit-content;
 }
 
+//treatmens
+
 .treatmens {
     margin-bottom: 5rem;
 
@@ -103,6 +105,7 @@ body {
 
 .treatmens__button {
     padding: 15px 69px;
+    font-size: 22px;
 }
 
 @media  (max-width: 991.78px) {
@@ -110,7 +113,7 @@ body {
     h1, h2 {
     font-size: 40px !important;
     }
-    p {
+    p, a {
         font-size: 16px !important;
     }
 }
