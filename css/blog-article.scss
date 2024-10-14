@@ -8,12 +8,27 @@ body {
 /* header+hero */
 
 .hero_background {
-    background-image:
-        linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-        url('../img/blog-article-1.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+}
+
+.background-1 {
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+        url('../img/blog-article-1.jpg');
+}
+
+.background-2 {
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+        url('../img/blog-article-2.jpg');
+}
+
+.background-3 {
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+        url('../img/blog-article-3.jpg');
 }
 
 .hero {
@@ -64,8 +79,11 @@ body {
 }
 
 .block__photo {
-    width: 50%;
     height: fit-content;
+
+    @media (max-width: 767.98px) {
+        width: 50%;
+    }
 }
 
 //treatmens
@@ -117,6 +135,8 @@ body {
         font-size: 16px !important;
     }
 }
+
+
 
 
 
