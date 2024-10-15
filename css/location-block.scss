@@ -34,8 +34,8 @@
     flex-wrap: wrap;
     justify-content: space-between;
 
-    @media (min-width: 1400px) {
-            padding: 0 !important;
+    @media (min-width: 768px) {
+            padding-left: 0 !important;
     }
 }
 
