@@ -73,9 +73,12 @@ body {
 }
 
 .questions__text {
-    margin-bottom: 1.25rem;
     font-size: 22px;
     line-height: 123%;
+}
+
+.questions__text:not(:last-child) {
+    margin-bottom: 1.25rem;
 }
 
 .block__photo {
