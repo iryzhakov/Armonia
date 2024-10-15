@@ -209,6 +209,10 @@ h1, h2, h3, p {
 
 .hero {
     padding-bottom: 5rem;
+
+    @media (max-width: 766.67px) {
+        padding-bottom: 2.5rem;
+    }
 }
 
 .hero__tittle {

@@ -34,6 +34,11 @@ body {
     font-family: var(--second-family);
     font-size: 25px;
     text-align: center;
+
+    @media (max-width: 991.67px) {
+        border-bottom: 1px solid var(--white);
+
+    }
 }
 
 .hero__nav {
@@ -41,8 +46,24 @@ body {
     line-height: 123%;
 }
 
-.nav_top {
-    border-bottom: 1px solid var(--white);
+.nav_top::after {
+    --offset: 17%;
+    content: '';
+    position: absolute;
+    left: calc(-1 * var(--offset));
+    bottom: 0;
+    height: 1px;
+    width: calc(100% + var(--offset));
+    background-color: var(--white);
+
+    @media (max-width: 991.67px) {
+        display: none;
+    }
+
+}
+
+.hero__link {
+    display: block;
 }
 
 //Branches
@@ -129,8 +150,8 @@ body {
         font-size: 25px !important;
     }
 
-    p {
-        font-size: 16px;
+    p, .hero__link {
+        font-size: 16px !important;
     }
 }
 

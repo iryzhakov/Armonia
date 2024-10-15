@@ -21,6 +21,10 @@ body {
     padding-top: 5rem;
     padding-bottom: 5rem;
     background-color: var(--dark-blue);
+
+    @media (max-width: 767.67px) {
+        padding: 2.5rem 0;
+    }
 }
 
 .questions_content {
@@ -127,8 +131,4 @@ body {
         font-size: 16px;
     }
 
-    .hero, .questions {
-        padding-top: 2.5rem;
-        padding-bottom: 2.5rem;
-    }
 }
