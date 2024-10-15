@@ -1,0 +1,50 @@
+@charset "UTF-8";
+
+body {
+    color: var(--warm-white);
+}
+
+/* header+hero */
+
+.hero_background {
+    background-image:
+        linear-gradient(360deg, rgb(8 18 38 / 0%) 0%, rgb(8 18 38 / 70%) 33%),
+        url('../img/our-offers.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.offers {
+    padding: 5rem 0;
+    background-image:
+        linear-gradient(360deg, rgb(8 18 38 / 0%) 0%, rgb(8 18 38 / 70%) 33%),
+        url('../img/contacts-1.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    @media (max-width: 767.67px) {
+        padding: 2.5rem 0;
+    }
+}
+
+//.offers__list {
+//    padding: 2.5rem;
+//}
+
+.offers__img {
+    width: auto;
+    margin-bottom: 2.5rem;
+}
+
+.offers__tittle {
+    font-family: var(--second-family);
+    font-size: 40px;
+}
+
+.offers__text {
+    font-size: 22px;
+    line-height: 123%;
+    color: var(--ginger);
+}
