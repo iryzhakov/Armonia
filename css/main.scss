@@ -298,7 +298,7 @@ a .footer__tittle {
 
 .top-button {
     position: fixed;
-    right: 10%;
+    right: 10rem;
     top: 65%;
     width: 66px;
     height: 66px;
@@ -311,6 +311,7 @@ a .footer__tittle {
     font-weight: 400;
     font-size: 1rem;
     color: var(--warm-white);
+    z-index: 3;
 
     @media (max-width: 1560px) {
         display: none;
@@ -323,4 +324,11 @@ a .footer__tittle {
 
 .white__color {
     color: var(--warm-white);
+}
+
+
+@media (max-width: 767.67px) {
+    h1, h2 {
+        font-size: 50px !important;
+    }
 }

@@ -66,6 +66,10 @@ body {
     display: block;
 }
 
+.hero__link:hover {
+    border-bottom: 1px solid var(--warm-white);
+}
+
 //Branches
 
 .branches {
@@ -142,9 +146,6 @@ body {
 }
 
 @media (max-width: 767.67px) {
-    h1, h2 {
-        font-size: 50px !important;
-    }
 
     .hero__tittle-text {
         font-size: 25px !important;
