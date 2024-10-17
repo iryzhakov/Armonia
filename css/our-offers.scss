@@ -15,6 +15,24 @@ body {
     background-size: cover;
 }
 
+.hero__tittle-block {
+    margin-bottom: 5rem;
+}
+
+.hero__tittle-text {
+    margin-bottom: 0;
+}
+
+.hero__text {
+    margin-bottom: 2.5rem;
+}
+
+.hero__text-alter {
+    font-family: var(--second-family);
+    font-size: 25px;
+
+}
+
 .offers {
     padding: 5rem 0;
     background-image:
@@ -29,9 +47,9 @@ body {
     }
 }
 
-//.offers__list {
-//    padding: 2.5rem;
-//}
+.offers__list {
+    /* padding: 2.5rem; */
+}
 
 .offers__img {
     width: auto;

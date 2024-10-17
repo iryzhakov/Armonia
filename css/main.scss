@@ -250,6 +250,14 @@ h1, h2, h3, p {
     text-align: center;
 }
 
+.hero__img {
+    position: absolute;
+    transform: translateY(20%);
+    bottom: 0;
+}
+
+/* footer */
+
 .footer {
     color: var(--dark-blue);
 }
