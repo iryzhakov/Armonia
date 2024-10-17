@@ -105,6 +105,37 @@ body {
 }
 
 
+/* Pakages */
+
+.packages {
+    margin: 5rem 0;
+
+    @media (max-width: 767.67px) {
+        margin: 2.5rem 0;
+    }
+}
+
+.packages__title-block {
+    flex-grow: 1;
+    border-bottom: 1px solid var(--warm-white);
+}
+
+.packages__btn-scnd {
+    margin: 0 1.25rem;
+    padding: 16px 12.5px;
+}
+
+.packages__tittle {
+    font-family: var(--second-family);
+    font-size: 50px;
+    text-transform: uppercase;
+}
+
+.packages__text {
+    font-family: var(--second-family);
+    font-size: 20px;
+}
+
 @media (max-width: 767.67px) {
 
     .hero__text {
