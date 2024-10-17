@@ -31,8 +31,7 @@ html {
 
 body {
     font-family: var(--font-family);
-    font-size: 22px;/* TODO нахера 22px ?) для боди */
-    font-weight: 400;/* TODO нахера 400 ?) */
+    background-color: var(--dark-blue);
 }
 
 a {
@@ -115,6 +114,30 @@ h1, h2, h3, p {
     fill: var(--warm-white);
 }
 
+.btn-first {
+    padding: 15px 10px;
+    line-height: 1;
+    color: var(--dark-blue);
+    background: var(--warm-white);
+    outline: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-first:focus {
+    background-color: var(--brown);
+    color: var(--warm-white);
+}
+
+.btn-first:hover {
+    background-color: var(--brown);
+    color: var(--warm-white);
+}
+
+.btn-first:active {
+    background-color: var(--ginger);
+    color: var(--warm-white);
+}
+
 .btn-scnd {
     padding: 15px 10px;
     line-height: 1;
@@ -186,6 +209,10 @@ h1, h2, h3, p {
 
 .hero {
     padding-bottom: 5rem;
+
+    @media (max-width: 766.67px) {
+        padding-bottom: 2.5rem;
+    }
 }
 
 .hero__tittle {
@@ -196,15 +223,20 @@ h1, h2, h3, p {
     text-align: center;
     text-transform: uppercase;
     letter-spacing: -0.01em;
+    line-height: 1;
 }
 
 .hero__tittle-text {
-    margin-bottom: 80px;
+    margin-bottom: 5rem;
     font-family: var(--second-family-italic);
     font-size: 50px;
     font-weight: 400;
     color: var(--ginger);
     text-align: center;
+
+    @media (max-width: 767.67px) {
+        margin-bottom: 2.5rem;
+    }
 }
 
 .hero__text {
@@ -217,6 +249,14 @@ h1, h2, h3, p {
     color: var(--warm-white);
     text-align: center;
 }
+
+.hero__img {
+    position: absolute;
+    transform: translateY(20%);
+    bottom: 0;
+}
+
+/* footer */
 
 .footer {
     color: var(--dark-blue);
@@ -253,8 +293,50 @@ a .footer__tittle {
     @media (min-width: 1400px) {
         max-width: 1400px;
     }
+
+    @media (max-width: 767.98px) {
+        --bs-gutter-x: 2.5rem;
+    }
+
 }
 
 .row {
     --bs-gutter-x: 1.25rem;
+}
+
+.top-button {
+    position: fixed;
+    right: 10rem;
+    top: 65%;
+    width: 66px;
+    height: 66px;
+    text-align: center;
+    border-radius: 100px;
+    border: 1px solid var(--warm-white);
+    font-family: var(--second-family);
+    font-style: italic;
+    line-height: 3.5;
+    font-weight: 400;
+    font-size: 1rem;
+    color: var(--warm-white);
+    z-index: 3;
+
+    @media (max-width: 1560px) {
+        display: none;
+    }
+}
+
+.ginger__color {
+    color: var(--ginger);
+}
+
+.white__color {
+    color: var(--warm-white);
+}
+
+
+@media (max-width: 767.67px) {
+    h1, h2 {
+        font-size: 50px !important;
+    }
 }
