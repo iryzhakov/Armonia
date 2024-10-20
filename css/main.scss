@@ -190,61 +190,22 @@ h1, h2, h3, p {
     margin-left: 15px;
 }
 
-.custom_radio {
-    user-select: none;
-    cursor: pointer;
-}
-
-.custom_radio:not(:last-child) {
-    margin-right: 10px;
-}
-
-.custom_radio_input {
-    position: absolute;
-    appearance: none;
-}
-
-.custom_radio_text {
-    position: relative;
-    padding-left: 20px;
-}
-
-.custom_radio_text::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 50%;
-    width: 15px;
-    height: 15px;
+.radio__btn {
+    width: 26px;
+    height: 26px;
     border-radius: 100%;
-    background-color: var(--warm-white);
-    transform: translateY(-50%);
-}
+    border: 1px solid transparent;
+    transition: background-color 0.3s ease, border-color 0.3s ease, opacity 0.3s ease;
 
-.custom_radio_text::after {
-    content: "";
-    position: absolute;
-    left: 4.5px;
-    top: 50%;
-    width: 8px;
-    height: 8px;
-    border-radius: 100%;
-    border: 1px solid var(--warm-white);
-    background-color: #ff0000;
-    transform: translateY(-50%);
-    opacity: 0;
-    transition: opacity 0.3s;
-}
+    &:hover {
+        background-color: rgba(251, 249, 245, 0.4);
+    }
 
-.custom_radio_input:checked + .custom_radio_text::after {
-    opacity: 1;
+    &:active {
+        border: 1px solid var(--warm-white);
+        background-color: unset;
+    }
 }
-
-.custom_radio_input:focus + .custom_radio_text {
-    outline: 1px solid #000;
-    outline-offset: 3px;
-}
-
 
 /* Header */
 
