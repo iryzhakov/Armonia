@@ -21,6 +21,10 @@ body {
 .packages__tittle-block {
     flex-grow: 1;
     border-bottom: 1px solid var(--warm-white);
+
+    @media (max-width: 991.91px) {
+        margin-bottom: 1.25rem;
+    }
 }
 
 .packages__btn-scnd {
