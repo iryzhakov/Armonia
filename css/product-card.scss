@@ -1,0 +1,124 @@
+@charset "UTF-8";
+
+body {
+    color: var(--warm-white);
+}
+
+/* header+hero */
+
+.hero_background {
+    background-image:
+        linear-gradient(360deg, rgb(8 18 38 / 0%) 0%, rgb(8 18 38 / 70%) 33%),
+        url('../img/contacts-1.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.hero__tittle {
+    margin-bottom: 5rem;
+    font-size: 50px;
+    color: var(--warm-white);
+    text-align: start;
+
+}
+
+.hero__tittle-block::after {
+        --offset: 45%;
+        content: "";
+        position: absolute;
+        left: calc(-1 * var(--offset));
+        bottom: 0;
+        height: 1px;
+        width: calc(100% + var(--offset));
+        background-color: var(--white);
+
+}
+
+.hero__tittle-text {
+    padding-bottom: 8rem;
+    margin-bottom: 0;
+    font-size: 22px;
+    font-family: var(--font-family);
+    line-height: 123%;
+    color: var(--warm-white);
+
+    span {
+        color: var(--ginger);
+    }
+}
+
+.hero__text {
+    margin: 0;
+    margin-bottom: 1.25rem;
+    font-size: 16px;
+}
+
+.btn-whatsapp {
+    padding: 15px 43px;
+}
+
+
+/* Treatmens */
+
+.treatmens {
+    margin: 5rem 0;
+
+
+    @media (max-width: 767.98px) {
+        margin: 2.5rem 0;
+    }
+}
+
+.treatmens__tittle-block {
+    margin-bottom: 2.5rem;
+}
+
+.treatmens__tittle {
+    flex-grow: 1;
+    margin-right: 20px;
+    font-family: var(--second-family);
+    font-size: 50px;
+    font-weight: 400;
+    color: var(--warm-white);
+    text-transform: uppercase;
+    border-bottom: 1px solid var(--warm-white);
+
+}
+
+.treatmens__link::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.treatmens__button {
+    padding: 15px 69px;
+    font-size: 22px;
+}
+
+/* overview */
+
+.overview {
+    margin: 5rem 0;
+
+    @media (max-width: 767.67px) {
+        margin: 2.5rem 0;
+    }
+}
+
+.overview__tittle::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    bottom: 70%;
+    left: 60%;
+    background-image: url("../img/product-card/photo-1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}

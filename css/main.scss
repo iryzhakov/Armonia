@@ -31,8 +31,7 @@ html {
 
 body {
     font-family: var(--font-family);
-    font-size: 22px;/* TODO нахера 22px ?) для боди */
-    font-weight: 400;/* TODO нахера 400 ?) */
+    background-color: var(--dark-blue);
 }
 
 a {
@@ -115,6 +114,30 @@ h1, h2, h3, p {
     fill: var(--warm-white);
 }
 
+.btn-first {
+    padding: 15px 10px;
+    line-height: 1;
+    color: var(--dark-blue);
+    background: var(--warm-white);
+    outline: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-first:focus {
+    color: var(--warm-white);
+    background-color: var(--brown);
+}
+
+.btn-first:hover {
+    color: var(--warm-white);
+    background-color: var(--brown);
+}
+
+.btn-first:active {
+    color: var(--warm-white);
+    background-color: var(--ginger);
+}
+
 .btn-scnd {
     padding: 15px 10px;
     line-height: 1;
@@ -167,6 +190,65 @@ h1, h2, h3, p {
     margin-left: 15px;
 }
 
+.custom_radio {
+    cursor: pointer;
+    user-select: none;
+
+    &__input {
+        position: absolute;
+        appearance: none;
+    }
+
+    &__text {
+        position: relative;
+        padding-left: 26px;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+            width: 26px;
+            height: 26px;
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" fill="none"><circle cx="13" cy="13" r="3" fill="%23FBF9F5"/></svg>');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            border-radius: 100%;
+            transition: background-color 0.3s ease;
+        }
+
+        &:hover::before {
+            background-color: rgba(251, 249, 245, 0.4);
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+            width: 26px;
+            height: 26px;
+            opacity: 0;
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" fill="none"><circle cx="13" cy="13" r="3" fill="%23FBF9F5"/></svg>');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            border: 1px solid var(--warm-white);
+            border-radius: 100%;
+            transition: opacity 0.3s ease;
+        }
+
+        .custom_radio__input:checked + &::after {
+            opacity: 1;
+        }
+    }
+}
+
+/* Header */
+
 .header {
     font-family: var(--font-family);
     font-size: 22px;
@@ -186,12 +268,17 @@ h1, h2, h3, p {
 
 .hero {
     padding-bottom: 5rem;
+
+    @media (max-width: 766.67px) {
+        padding-bottom: 2.5rem;
+    }
 }
 
 .hero__tittle {
     font-family: var(--second-family);
     font-size: 100px;
     font-weight: 400;
+    line-height: 1;
     color: var(--ginger);
     text-align: center;
     text-transform: uppercase;
@@ -199,12 +286,16 @@ h1, h2, h3, p {
 }
 
 .hero__tittle-text {
-    margin-bottom: 80px;
+    margin-bottom: 5rem;
     font-family: var(--second-family-italic);
     font-size: 50px;
     font-weight: 400;
     color: var(--ginger);
     text-align: center;
+
+    @media (max-width: 767.67px) {
+        margin-bottom: 2.5rem;
+    }
 }
 
 .hero__text {
@@ -217,6 +308,14 @@ h1, h2, h3, p {
     color: var(--warm-white);
     text-align: center;
 }
+
+.hero__img {
+    position: absolute;
+    bottom: 0;
+    transform: translateY(20%);
+}
+
+/* footer */
 
 .footer {
     color: var(--dark-blue);
@@ -253,8 +352,50 @@ a .footer__tittle {
     @media (min-width: 1400px) {
         max-width: 1400px;
     }
+
+    @media (max-width: 767.98px) {
+        --bs-gutter-x: 2.5rem;
+    }
+
 }
 
 .row {
     --bs-gutter-x: 1.25rem;
+}
+
+.top-button {
+    position: fixed;
+    z-index: 3;
+    top: 65%;
+    right: 10rem;
+    width: 66px;
+    height: 66px;
+    font-family: var(--second-family);
+    font-size: 1rem;
+    font-weight: 400;
+    font-style: italic;
+    line-height: 3.5;
+    color: var(--warm-white);
+    text-align: center;
+    border: 1px solid var(--warm-white);
+    border-radius: 100px;
+
+    @media (max-width: 1560px) {
+        display: none;
+    }
+}
+
+.ginger__color {
+    color: var(--ginger);
+}
+
+.white__color {
+    color: var(--warm-white);
+}
+
+
+@media (max-width: 767.67px) {
+    h1, h2 {
+        font-size: 50px !important;
+    }
 }

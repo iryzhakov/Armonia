@@ -1,0 +1,40 @@
+//Choose-options block
+
+.choose-options {
+    padding-bottom:  5rem;
+    background-color: var(--dark-blue);
+
+    @media (max-width: 767.98px) {
+        padding-bottom: 2.5rem;
+    }
+
+}
+
+.options__img {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.options__tittle {
+    position: relative;
+    margin-bottom: 2.5rem;
+    font-family: var(--second-family);
+    color: var(--ginger);
+    font-size: 50px !important;
+    z-index: 2;
+}
+
+.options__text {
+    position: relative;
+    margin-bottom: 2.5rem;
+    font-size: 22px;
+    line-height: 123%;
+    z-index: 2;
+}
+
+.options__button {
+    padding: 15px 69px;
+}
