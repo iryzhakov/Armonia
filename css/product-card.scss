@@ -1,0 +1,57 @@
+@charset "UTF-8";
+
+body {
+    color: var(--warm-white);
+}
+
+/* header+hero */
+
+.hero_background {
+    background-image:
+        linear-gradient(360deg, rgb(8 18 38 / 0%) 0%, rgb(8 18 38 / 70%) 33%),
+        url('../img/therapists.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+/* Treatmens */
+
+.treatmens {
+    margin-bottom: 5rem;
+
+    @media (max-width: 767.98px) {
+        margin-bottom: 2.5rem;
+    }
+}
+
+.treatmens__tittle-block {
+    margin-bottom: 2.5rem;
+}
+
+.treatmens__tittle {
+    flex-grow: 1;
+    margin-right: 20px;
+    font-family: var(--second-family);
+    font-size: 50px;
+    font-weight: 400;
+    color: var(--warm-white);
+    text-transform: uppercase;
+    border-bottom: 1px solid var(--warm-white);
+
+}
+
+.treatmens__link::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.treatmens__button {
+    padding: 15px 69px;
+    font-size: 22px;
+}
