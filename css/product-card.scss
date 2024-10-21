@@ -15,6 +15,33 @@ body {
     background-size: cover;
 }
 
+.hero__tittle {
+    margin-bottom: 5rem;
+    font-size: 50px;
+    color: var(--warm-white);
+    text-align: start;
+
+}
+
+.hero__tittle-text {
+    padding-bottom: 5rem;
+    margin-bottom: 0;
+    border-bottom: 1px solid var(--warm-white);
+    font-size: 22px;
+    font-family: var(--font-family);
+    line-height: 123%;
+    color: var(--warm-white);
+
+    span {
+        color: var(--ginger);
+    }
+}
+
+.hero__text {
+    font-size: 16px;
+
+}
+
 
 /* Treatmens */
 
