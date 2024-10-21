@@ -99,3 +99,26 @@ body {
     padding: 15px 69px;
     font-size: 22px;
 }
+
+/* overview */
+
+.overview {
+    margin: 5rem 0;
+
+    @media (max-width: 767.67px) {
+        margin: 2.5rem 0;
+    }
+}
+
+.overview__tittle::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    bottom: 70%;
+    left: 60%;
+    background-image: url("../img/product-card/photo-1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
