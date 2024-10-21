@@ -65,6 +65,8 @@ body {
 
 }
 
+/* Offers */
+
 .offers {
     padding-top: 5rem;
     background-image:
@@ -140,7 +142,7 @@ body {
 
 @media (max-width: 767.67px) {
 
-    .hero__text {
+    .hero__text, .offers__text {
         font-size: 16px;
     }
 
