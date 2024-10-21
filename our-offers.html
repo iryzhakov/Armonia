@@ -233,7 +233,7 @@
             <h2 class="gallery__tittle justify-content-start col-12 col-xl-10">Gallery</h2>
         </div>
         <div class="gallery__block d-flex flex-wrap">
-            <div class="row flex-nowrap overflow-scroll">
+            <div class="row flex-nowrap overflow-scroll" id="photo-gallery">
                 <img id="pct-1" class="col-lg-2 col-6" src="img/our-offers/photo.jpg" alt="Photo">
                 <img class="col-lg-2 col-6" src="img/our-offers/photo-1.jpg" alt="Photo">
                 <img id="pct-2" class="col-lg-2 col-6" src="img/our-offers/photo-2.jpg" alt="Photo">
@@ -242,21 +242,18 @@
                 <img class="col-lg-2 col-6" src="img/our-offers/photo-5.jpg" alt="Photo">
             </div>
             <div class="d-flex gap-3 w-100 justify-content-center">
-                <a href="#pct-1" class="radio__btn">
-                    <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="13" cy="13" r="3" fill="#FBF9F5" />
-                    </svg>
-                </a>
-                <a href="#pct-2" class="radio__btn">
-                    <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="13" cy="13" r="3" fill="#FBF9F5" />
-                    </svg>
-                </a>
-                <a href="#pct-3" class="radio__btn">
-                    <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="13" cy="13" r="3" fill="#FBF9F5" />
-                    </svg>
-                </a>
+                <label class="custom_radio">
+                    <input type="radio" name="one-two" class="custom_radio__input" href="#pct-1">
+                    <span class="custom_radio__text"></span>
+                </label>
+                <label class="custom_checkbox">
+                    <input type="radio" name="one-two" class="custom_radio__input" href="#pct-2">
+                    <span class="custom_radio__text"></span>
+                </label>
+                <label class="custom_checkbox">
+                    <input type="radio" name="one-two" class="custom_radio__input" href="#pct-3">
+                    <span class="custom_radio__text"></span>
+                </label>
             </div>
         </div>
     </div>
@@ -439,5 +436,21 @@
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+    document.querySelectorAll('.custom_radio__input').forEach(radio => {
+        radio.addEventListener('change', function() {
+            const targetId = this.getAttribute('href');
+            const targetElement = document.querySelector(targetId);
+            const galleryBlock = document.getElementById('photo-gallery');
+
+            if (targetElement) {
+                galleryBlock.scroll({
+                    left: targetElement.offsetLeft - 10,
+                    behavior: 'smooth'
+                });
+            }
+        });
+    });
+</script>
 </body>
 </html>
