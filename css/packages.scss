@@ -16,6 +16,12 @@ body {
 
 .packages__block {
     margin-bottom: 2.5rem;
+
+    @media (max-width: 767.67px) {
+        .btn-whatsapp {
+            margin-top: 1.25rem;
+        }
+    }
 }
 
 .packages__tittle-block {
@@ -31,6 +37,10 @@ body {
     padding: 16px 12.5px;
     margin: 0 1.25rem;
 
+    @media (max-width: 767.67px) {
+        width: auto;
+        margin-right: 0;
+    }
 }
 
 .packages__tittle {
@@ -47,6 +57,7 @@ body {
 .packages__item {
     max-width: 546px;
     margin-bottom: 2.5rem;
+    padding-right: 1rem;
 }
 
 .packages__item-tittle {
@@ -62,5 +73,9 @@ body {
     span {
         color: var(--ginger);
     }
+
+    @media (max-width: 767.67px) {
+            font-size: 16px;
+        }
 }
 
