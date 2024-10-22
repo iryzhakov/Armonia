@@ -275,8 +275,8 @@
 <section class="overview position-relative">
     <div class="container d-flex justify-content-center">
         <div class="col-12 col-xl-10 d-flex flex-wrap">
-            <div class="col-12 col-xl-5 overview__tittle-block">
-                <h2 class="overview__tittle">
+            <div class="col-12 col-xl-6 overview__tittle-block mb-40">
+                <h2 class="overview__tittle col-xl-6">
                     Treatment Overview
                 </h2>
                 <p class="overview__text">
@@ -286,41 +286,53 @@
                     A wellness massage for two in Dubai is not only an excellent way to relax but also to address any issues that may have arisen in your relationship. It's an opportunity to connect with your partner on a deeper level while enjoying a pampering treat.
                 </p>
             </div>
-            <div class="col-12 d-flex">
-                <div class="col-6">
+            <div class="col-12 d-flex flex-wrap justify-content-between mb-80">
+                <div class="col-12 col-lg-6 overview__arrow">
+                    <h3 class="overview__item_tittle">Benefits of Wellness massage for two</h3>
+                    <div class="position-absolute overview__article d-flex flex-row-reverse">
+                        <p class="col-6">Spend time together</p>
+                    </div>
+                    <div class="img-container">
+                        <img src="img/product-card/photo-2.jpg" alt="photo">
+                    </div>
+                </div>
+                <div class="col-12 col-lg-5 ps-3 p-overview">
+                    <p class="overview__text">
+                        Why should you consider a wellness massage for two with your partner? Well, a recent argument or a lack of intimacy can put a damper on your weekend plans. The stress and strain of daily life can take a toll on your relationship. However, a wellness massage for two can work wonders at reviving your connection.
+                    </p>
+                    <p class="overview__text">
+                        Through the skilled hands of Armonia's massage therapists, these massages can help couples address personal problems, relieve stress, and bond on a deeper level. These massages are known to set the stage for a refreshed and   reinvigorated relationship, making them a game-changer for couples who need that extra spark.
+                    </p>
+                    <p class="overview__text">
+                        Armonia Spa specializes in creating an environment where you and your partner can unwind and reconnect. The massage tables are set side-by-side, allowing you both to immerse yourselves in a stress-reducing, muscle-relieving, and bonding experience. It's an opportunity to put aside your worries and focus on each other, rekindling the flame in your relationship.
+                    </p>
+                </div>
+            </div>
+            <div class="col-12 d-flex flex-wrap justify-content-between mb-40">
+                <div class="col-12 col-lg-6">
                     <h3 class="overview__item_tittle">Personalized Wellness Massage For Two</h3>
                 </div>
-                <div class="col-6">
+                <div class="col-12 col-lg-5 ps-3">
                     <p class="overview__text">
                         What sets Armonia Spa apart is our commitment to your comfort. You can even inform our therapists about your specific needs. Whether you prefer more or less pressure, want the focus on a particular area, or have any underlying health conditions, our therapists are here to tailor the experience to your liking. Your comfort and well-being are our top priorities.
                     </p>
                 </div>
             </div>
-            <div class="col-12 d-flex">
-                <div class="col-6">
-                    <h3 class="overview__item_tittle">Personalized Wellness Massage For Two</h3>
-                </div>
-                <div class="col-6">
-                    <p class="overview__text">
-                        What sets Armonia Spa apart is our commitment to your comfort. You can even inform our therapists about your specific needs. Whether you prefer more or less pressure, want the focus on a particular area, or have any underlying health conditions, our therapists are here to tailor the experience to your liking. Your comfort and well-being are our top priorities.
-                    </p>
-                </div>
-            </div>
-            <div class="col-12 d-flex">
-                <div class="col-6">
+            <div class="col-12 d-flex flex-wrap justify-content-between mb-80">
+                <div class="col-12 col-lg-6">
                     <h3 class="overview__item_tittle">Addressing Health Conditions</h3>
                 </div>
-                <div class="col-6">
+                <div class="col-12 col-lg-5 ps-3">
                     <p class="overview__text">
                         We understand the importance of your well-being. That's why we encourage you to inform our therapists about any underlying health conditions you may have. This ensures that the massage is tailored to your specific needs and is safe and beneficial for you and your partner.
                     </p>
                 </div>
             </div>
-            <div class="col-12 d-flex">
-                <div class="col-6">
+            <div class="col-12 d-flex flex-wrap justify-content-between">
+                <div class="col-12 col-lg-6">
                     <h3 class="overview__item_tittle">The Science of Happiness in a Massage</h3>
                 </div>
-                <div class="col-6">
+                <div class="col-12 col-lg-5 ps-3">
                     <p class="overview__text">
                         Massages, including wellness massages for two, have scientifically proven benefits. They release chemicals like oxytocin, serotonin, and dopamine, which contribute to happiness and relaxation. These chemicals not only relieve stress but also help you feel happier and more connected to your partner. It's the perfect way to boost your mood and enhance your relationship.
                     </p>
@@ -414,21 +426,5 @@
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-<script>
-    document.querySelectorAll('.custom_radio__input').forEach(radio => {
-        radio.addEventListener('change', function() {
-            const targetId = this.getAttribute('href');
-            const targetElement = document.querySelector(targetId);
-            const galleryBlock = document.getElementById('photo-gallery');
-
-            if (targetElement) {
-                galleryBlock.scroll({
-                    left: targetElement.offsetLeft - 10,
-                    behavior: 'smooth'
-                });
-            }
-        });
-    });
-</script>
 </body>
 </html>
