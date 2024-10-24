@@ -43,10 +43,10 @@
     <section class="hero">
         <div class="container d-flex justify-content-center">
             <div class="col-12 col-xl-10 d-flex flex-wrap justify-content-between">
-                <div class="col-12 col-xl-6">
+                <div class="col-12 col-lg-6 justify-content-center d-flex d-lg-block">
                     <img src="img/product-card.jpg" alt="Photo">
                 </div>
-                <div class="col-12 col-xl-5">
+                <div class="col-12 col-lg-5">
                     <div class="d-flex flex-wrap justify-content-center hero__tittle-block position-relative z-2">
                         <h1 class="hero__tittle justify-content-center me-3">
                             Wellness massage for two
@@ -449,6 +449,29 @@
 
 <!-- Bootstrap CSS and FontAwesome for icons -->
 
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        function moveImage() {
+            const imageBlock = document.querySelector('.col-12.col-lg-6'); // Блок с изображением
+            const contentBlock = document.querySelector('.hero__tittle'); // Блок с контентом
+
+            if (window.innerWidth < 992) {
+                // Если ширина экрана меньше 992px
+                contentBlock.after(imageBlock); // Перемещаем блок с изображением под контент
+            } else {
+                // Если ширина экрана больше или равна 992px, возвращаем изображение на место
+                const parent = document.querySelector('.col-12.col-xl-10');
+                parent.prepend(imageBlock); // Возвращаем изображение наверх
+            }
+        }
+
+        // Запускаем при загрузке страницы
+        moveImage();
+
+        // Перемещаем при изменении размера окна
+        window.addEventListener('resize', moveImage);
+    });
+</script>
 <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 <script src="./js/blog.js"></script>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>

@@ -54,6 +54,18 @@ body {
         width: calc(100% + var(--offset));
         background-color: var(--white);
 
+
+    @media (max-width: 991.67px) {
+        --offset: 0%;
+    }
+}
+
+.hero__tittle-block {
+    @media (max-width: 991.67px) {
+        * {
+            padding-bottom: 1.25rem !important;
+        }
+    }
 }
 
 .hero__tittle-text {
@@ -235,5 +247,12 @@ body {
 
     p {
         padding: 2.25rem 2rem;
+    }
+}
+
+
+@media (max-width: 991.67px) {
+    h3 {
+        margin-bottom: 1.25rem;
     }
 }
