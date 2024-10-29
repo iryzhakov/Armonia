@@ -95,6 +95,11 @@ body {
 .types__btn {
     width: fit-content;
     padding: 15px 82px;
+    text-align: center;
+
+    @media (max-width: 767.67px) {
+        width: auto;
+    }
 }
 
 /* choose-options */
