@@ -244,7 +244,19 @@ body {
 
 /* packages */
 
+.packages {
+    margin: 0;
+    padding: 5rem 0;
+    background-image: url('../img/contacts-1.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
 .packages__btn-scnd {
-    margin-right: 0;
     padding: 15px 46px;
+
+    @media (max-width: 991.67px) {
+        margin-left: 0;
+    }
 }
