@@ -49,6 +49,17 @@ body {
     text-transform: uppercase;
 }
 
+.packages__tittle-text {
+    margin-bottom: 2.5rem;
+    font-size: 22px;
+    line-height: 123%;
+
+    @media (max-width: 767.67px) {
+        font-size: 16px;
+    }
+
+}
+
 .packages__text {
     font-family: var(--second-family);
     font-size: 20px;
