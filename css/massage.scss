@@ -258,5 +258,51 @@ body {
 
     @media (max-width: 991.67px) {
         margin-left: 0;
+        width: 100%;
+    }
+}
+
+/* Bath ritual */
+
+.bath-ritual {
+    padding: 5rem 0;
+}
+
+.ritual__tittle-block {
+    p {
+        font-family: var(--second-family);
+        font-size: 20px;
+    }
+
+}
+
+.ritual__tittle {
+    position: relative;
+    padding-bottom: 2.5rem;
+    margin-bottom: 2.5rem;
+    font-family: var(--second-family);
+    font-size: 50px;
+    text-transform: uppercase;
+    border-bottom: 1px solid var(--warm-white);
+}
+
+.ritual__tittle-text {
+    left: 7.5rem;
+}
+
+.ritual__text-block {
+    margin-bottom: 5.3125rem;
+}
+
+.ritual__text {
+    font-size: 22px;
+    line-height: 123%;
+
+    &:not(:last-child) {
+        margin-bottom: 2rem;
+    }
+
+    @media (max-width: 767.76px) {
+        font-size: 16px;
     }
 }
