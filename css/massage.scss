@@ -331,3 +331,26 @@ body {
         font-size: 16px;
     }
 }
+
+/* best__beauty */
+
+.best__beauty {
+    padding: 5rem 0;
+
+    @media (max-width: 767.67px) {
+        padding: 2.5rem 0;
+    }
+}
+
+
+/* relax-and-renew */
+
+.relax-and-renew {
+    padding: 5rem 0;
+    position: relative;
+    background-image: url('../img/massage-bg-2.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: var(--dark-blue);
+}
