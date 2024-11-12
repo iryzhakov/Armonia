@@ -250,6 +250,14 @@ h1, h2, h3, p {
     }
 }
 
+.custom-gap {
+    row-gap: 5rem;
+
+    @media (max-width: 767.67px) {
+        row-gap: 2.5rem;
+    }
+}
+
 /* Header */
 
 .header {

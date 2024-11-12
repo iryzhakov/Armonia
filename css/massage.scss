@@ -289,8 +289,12 @@ body {
 
 /* Bath ritual */
 
-.bath-ritual {
+.bath__rituals {
     padding: 5rem 0;
+
+    @media (max-width: 767.67px) {
+        padding: 2.5rem 0;
+    }
 }
 
 .ritual__tittle-block {
@@ -334,7 +338,7 @@ body {
 
 /* best__beauty */
 
-.best__beauty {
+.best__beauty, .massage__overview {
     padding: 5rem 0;
 
     @media (max-width: 767.67px) {
@@ -345,7 +349,7 @@ body {
 
 /* relax-and-renew */
 
-.relax-and-renew {
+.relax__renew {
     padding: 5rem 0;
     position: relative;
     background-image: url('../img/massage-bg-2.jpg');
@@ -353,4 +357,103 @@ body {
     background-position: center;
     background-size: cover;
     color: var(--dark-blue);
+
+    @media (max-width: 767.67px) {
+        padding: 2.5rem 0;
+    }
+}
+
+.relax__renew-tittle {
+    font-family: var(--second-family);
+    font-size: 50px;
+    text-transform: uppercase;
+
+    @media (max-width: 991.76px) {
+        padding-bottom: 2.5rem;
+    }
+}
+
+.relax__renew-text {
+    padding: 2.5rem 0;
+    font-size: 22px;
+    line-height: 123%;
+    border-top: 1px solid var(--dark-blue);
+
+    @media (max-width: 767.76px) {
+        font-size: 16px;
+    }
+
+    p {
+        &:not(:last-child) {
+            margin-bottom: 2rem;
+        }
+    }
+}
+
+/* massage__overview */
+
+.massage__overview {
+    a {
+        padding: 15px 45px;
+    }
+}
+
+.photo__block {
+    left: -11%;
+    transition: left 0.3 ease, right 0.3 ease;
+
+    &:last-of-type {
+        left: unset;
+        right: -11%;
+    }
+
+    @media (max-width: 1820px) {
+        left: -15%;
+
+        &:last-of-type {
+            left: unset;
+            right: -15%;
+        }
+    }
+
+    @media (max-width: 1760px) {
+        left: -20%;
+
+        &:last-of-type {
+            left: unset;
+            right: -20%;
+        }
+    }
+
+    @media (max-width: 1640px) {
+        left: -25%;
+
+        &:last-of-type {
+            left: unset;
+            right: -25%;
+        }
+    }
+
+    @media (max-width: 1530px) {
+        left: -30%;
+
+        &:last-of-type {
+            left: unset;
+            right: -30%;
+        }
+    }
+
+    @media (max-width: 1440px) {
+        display: none;
+    }
+
+    @media (max-width: 991.67px) {
+        &:last-of-type {
+            display: block;
+            position: static !important;
+            order: 3;
+            text-align: center;
+            width: 100%;
+        }
+    }
 }
