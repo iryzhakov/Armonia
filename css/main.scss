@@ -115,6 +115,40 @@ h1, h2, h3, p {
     fill: var(--warm-white);
 }
 
+.btn-whatsapp-block {
+    border: none;
+    text-decoration: none;
+    font-family: var(--second-family);
+    font-size: 25px;
+    text-align: center;
+    color: var(--white);
+
+    svg {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%);
+        z-index: 1;
+    }
+
+    &:hover {
+        color: var(--whatsapp);
+
+        svg {
+            opacity: .4;
+        }
+
+    }
+
+    &:active {
+        color: var(--dark-blue);
+
+        svg {
+            opacity: .4;
+        }
+    }
+}
+
 .btn-first {
     padding: 15px 10px;
     line-height: 1;
