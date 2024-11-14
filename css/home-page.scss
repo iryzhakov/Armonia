@@ -53,3 +53,129 @@
     font-family:var(--second-family);
     font-size:25px
 }
+
+/* .choose-options */
+
+.choose-options {
+    position: relative;
+    background-image: url('../img/contacts-1.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-bottom: 2.5rem;
+}
+
+.options__tittle {
+    color: var(--warm-white);
+}
+
+/* branches */
+
+.branches {
+    padding: 2.5rem 0;
+    position: relative;
+    background-image: url('../img/massage-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+/* Bath ritual */
+
+.bath__rituals {
+    padding: 5rem 0;
+
+    @media (max-width: 767.67px) {
+        padding: 2.5rem 0;
+    }
+}
+
+.ritual__tittle-block {
+    p {
+        font-family: var(--second-family);
+        font-size: 20px;
+    }
+
+}
+
+.ritual__tittle {
+    position: relative;
+    padding-bottom: 2.5rem;
+    margin-bottom: 2.5rem;
+    font-family: var(--second-family);
+    font-size: 50px;
+    text-transform: uppercase;
+    border-bottom: 1px solid var(--warm-white);
+}
+
+.ritual__tittle-text {
+    left: 7.5rem;
+}
+
+.ritual__text-block {
+    margin-bottom: 5.3125rem;
+}
+
+.ritual__text {
+    font-size: 22px;
+    line-height: 123%;
+
+    &:not(:last-child) {
+        margin-bottom: 2rem;
+    }
+
+    @media (max-width: 767.76px) {
+        font-size: 16px;
+    }
+}
+
+/* best__beauty */
+
+.best__beauty, .massage__overview {
+    padding: 5rem 0;
+
+    @media (max-width: 767.67px) {
+        padding: 2.5rem 0;
+    }
+}
+
+/* Price */
+
+.price {
+    position: relative;
+
+    &:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 35%;
+        transform: translateX(-50%);
+        width: 1px;
+        background-color: var(--dark-blue);
+    }
+
+}
+
+.price__bg-1 {
+    position: relative;
+    height: 300px;
+    background-image: url('../img/price/bg-1.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: var(--dark-blue);
+}
+
+
+.price__tittle {
+    font-family: var(--second-family);
+    font-size: 50px;
+    text-transform: uppercase;
+}
+
+.price__text {
+    font-size: 22px;
+    line-height: 123%;
+}
+

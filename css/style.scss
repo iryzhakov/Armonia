@@ -10,6 +10,8 @@
 @import "choose-options";
 
 @import "packages";
+
+@import "branches";
 /* TODO Если блок к примеру используется в двух шаблонах,
     то создавай отдельный scss для такого блока и испортируй его в те 2 шаблона.
     @import "block-big-preview";*/
