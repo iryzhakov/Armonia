@@ -179,3 +179,38 @@
     line-height: 123%;
 }
 
+/* price ul */
+
+.service-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    color: var(--warm-white);
+    background-color: var(--dark-blue);
+
+    li {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 0;
+        font-size: 22px;
+        line-height: 123%;
+
+        &:not(:last-child) {
+            border-bottom: 1px solid var(--warm-white);
+        }
+
+
+        .service-name {
+            flex: 1;
+            text-align: left;
+        }
+
+        .service-details {
+            text-align: right;
+        }
+
+        .price-col {
+            color: var(--ginger);
+        }
+    }
+}
