@@ -6,6 +6,10 @@ body {
 
 /* header+hero */
 
+.hero {
+    padding-bottom: 7rem;
+}
+
 .hero_background {
     background-image:
         linear-gradient(360deg, rgb(8 18 38 / 0%) 0%, rgb(8 18 38 / 70%) 33%),
@@ -16,7 +20,7 @@ body {
 }
 
 .hero__text {
-    margin-bottom: 5rem;
+    margin-bottom: 4rem;
 
     @media (max-width: 767.67px) {
         margin-bottom: 2.5rem;
@@ -35,9 +39,14 @@ body {
     }
 }
 
+.hero__img {
+    left: -1.5rem;
+}
+
 .hero__nav {
     font-size: 22px;
     line-height: 123%;
+    padding-left: 2rem;
 }
 
 .nav_top::after {
@@ -75,3 +84,6 @@ body {
     }
 }
 
+.location__tittle-block {
+    margin-bottom: 2.5rem;
+}
