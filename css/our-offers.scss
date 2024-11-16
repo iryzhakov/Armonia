@@ -84,6 +84,17 @@ body {
     position: relative;
     display: flex;
     flex-wrap: wrap;
+
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        top: 0;
+        transform: translateX(-50%);
+        width: 1px;
+        background-color: var(--warm-white-20);
+    }
 }
 
 .offers__img {
@@ -97,16 +108,6 @@ body {
     font-family: var(--second-family);
     font-size: 40px;
 
-    &::after {
-        content: "";
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        top: 0;
-        transform: translateX(-50%);
-        width: 1px;
-        background-color: var(--warm-white-20);
-    }
 }
 
 .offers__text {
@@ -117,16 +118,6 @@ body {
     line-height: 123%;
     color: var(--ginger);
 
-    &::after {
-        content: "";
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        top: 0;
-        transform: translateX(-50%);
-        width: 1px;
-        background-color: var(--warm-white-20);
-    }
 }
 
 /* Gallery */
