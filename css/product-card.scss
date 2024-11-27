@@ -166,7 +166,7 @@ body {
         position: absolute;
         top: 0;
         bottom: 0;
-        left: 53%;
+        left: 55%;
         transform: translateX(-50%);
         width: 1px;
         background-color: var(--white);
@@ -182,7 +182,6 @@ body {
     font-family: var(--second-family);
     font-size: 50px;
     text-transform: uppercase;
-    line-height: 1.4;
 }
 
 .overview__text {
@@ -220,6 +219,7 @@ body {
 
         @media (max-width: 991.67px) {
             opacity: 0;
+            left: 0;
         }
     }
 
