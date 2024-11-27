@@ -44,6 +44,18 @@ body {
 
 }
 
+.hero__gap {
+    padding-left: 8rem;
+
+    @media (max-width: 1399.67px) {
+        padding-left: 2rem;
+    }
+
+    @media (max-width: 991.67px) {
+        padding-left: 0;
+    }
+}
+
 .hero__tittle-block::after {
         --offset: 45%;
         content: "";
@@ -93,6 +105,13 @@ body {
 
 
 /* Treatmens */
+
+.questions__text {
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    font-size: 22px;
+    line-height: 123%;
+}
 
 .treatmens {
     margin: 5rem 0;
@@ -163,6 +182,7 @@ body {
     font-family: var(--second-family);
     font-size: 50px;
     text-transform: uppercase;
+    line-height: 1.4;
 }
 
 .overview__text {
