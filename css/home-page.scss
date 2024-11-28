@@ -280,6 +280,11 @@
 
 .revaews {
     padding: 5rem 0;
+    background-image: url("/img/massage-bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center 65%;
+    background-size: 100% 1000px;
+
 
     @media (max-width: 767.67px) {
         padding: 2.5rem 0;
