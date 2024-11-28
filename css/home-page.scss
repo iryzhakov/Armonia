@@ -152,7 +152,7 @@
 .price {
     position: relative;
 
-    &:after {
+    &::after {
         content: "";
         position: absolute;
         top: 0;
@@ -341,7 +341,6 @@
 }
 
 .review-packages__tittle {
-
     &::after {
         content: "";
         position: absolute;
@@ -386,6 +385,7 @@
         p {
             color: var(--warm-white);
         }
+
         img {
             height: 171px;
         }
