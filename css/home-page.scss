@@ -102,7 +102,7 @@
 .ritual__tittle {
     position: relative;
     padding-bottom: 2.5rem;
-    margin-bottom: 2.5rem;
+    margin-bottom: 1.25rem;
     font-family: var(--second-family);
     font-size: 50px;
     text-transform: uppercase;
@@ -115,6 +115,7 @@
 
 .ritual__text-block {
     margin-bottom: 5.3125rem;
+    padding-top: 1.25rem;
 }
 
 .ritual__text {
@@ -166,6 +167,9 @@
         }
     }
 
+    .hero__text-alter {
+        font-size: 20px;
+    }
 }
 
 .price__bg-1 {
@@ -288,6 +292,10 @@
              margin-right: 0;
          }
      }
+
+    .btn-scnd {
+        width: 217px;
+    }
  }
 
 .review__tittle {
