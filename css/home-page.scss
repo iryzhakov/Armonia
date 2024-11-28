@@ -73,6 +73,7 @@
 
 .branches {
     padding: 2.5rem 0;
+    margin-top: 0;
     position: relative;
     background-image: url('../img/massage-bg.jpg');
     background-repeat: no-repeat;
@@ -137,6 +138,12 @@
     @media (max-width: 767.67px) {
         padding: 2.5rem 0;
     }
+}
+
+/* Packages */
+
+.packages {
+    margin-top: 0;
 }
 
 /* Price */
