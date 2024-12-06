@@ -400,3 +400,57 @@
         }
     }
 }
+
+
+/* Modal branch*/
+
+.modal__branch {
+    color: var(--dark-blue);
+
+    .modal-content {
+        width: 691px;
+
+        @media (max-width: 767.67px) {
+            justify-self: center;
+            width: 345px;
+        }
+    }
+
+    .modal-header {
+        padding: 2.5rem;
+        border-bottom: none;
+    }
+
+    .title {
+        font-size: 40px;
+        font-family: var(--second-family);
+    }
+
+    .modal-body {
+        padding: 0;
+    }
+
+    .info {
+        padding: 2.5rem;
+    }
+
+    .address {
+        margin-bottom: 1.25rem;
+
+        img {
+            margin-top: -4px;
+            margin-right: 10px;
+        }
+    }
+
+    .phone {
+        margin-bottom: 2.5rem;
+
+        img {
+            margin-top: -3px;
+            margin-right: 10px;
+        }
+    }
+
+
+}
