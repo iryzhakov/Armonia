@@ -417,11 +417,16 @@
     }
 
     .modal-header {
+        flex-wrap: wrap;
         padding: 2.5rem;
         border-bottom: none;
 
         @media (max-width: 767.67px) {
            padding: 1.5rem;
+
+            button {
+                order: -1;
+            }
         }
     }
 
