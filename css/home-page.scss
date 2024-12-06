@@ -409,9 +409,9 @@
 
     .modal-content {
         width: 691px;
+        justify-self: center;
 
         @media (max-width: 767.67px) {
-            justify-self: center;
             width: 345px;
         }
     }
@@ -419,6 +419,10 @@
     .modal-header {
         padding: 2.5rem;
         border-bottom: none;
+
+        @media (max-width: 767.67px) {
+           padding: 1.5rem;
+        }
     }
 
     .title {
@@ -428,10 +432,21 @@
 
     .modal-body {
         padding: 0;
+
+        @media (max-width: 767.67px) {
+            padding: 1.5rem;
+        }
     }
 
     .info {
         padding: 2.5rem;
+        font-size: 22px;
+        line-height: 1.23;
+
+        @media (max-width: 767.67px) {
+            padding: 1.5rem;
+            font-size: 16px;
+        }
     }
 
     .address {

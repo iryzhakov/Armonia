@@ -672,9 +672,11 @@
                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
                             <div class="modal-body d-flex justify-content-between">
-                                <img src="/img/home-page/img-1.jpg" alt="photo">
-                                <img src="/img/home-page/img-2.jpg" alt="photo">
-                                <img src="/img/home-page/img-3.jpg" alt="photo">
+                                <div class="row">
+                                    <img class="col-6 col-md-4" src="/img/home-page/img-1.jpg" alt="photo">
+                                    <img class="col-6 col-md-4" src="/img/home-page/img-2.jpg" alt="photo">
+                                    <img class="d-none d-md-block col-md-4" src="/img/home-page/img-3.jpg" alt="photo">
+                                </div>
                             </div>
                             <div class="info">
                                 <div class="address">
@@ -684,8 +686,8 @@
                                     <img src="/img/locations/phone.svg" alt="Phone" width="11" height="11" loading="lazy">
                                     <a href="tel:+971588219829">+971 58 821 9829</a>
                                 </div>
-                                <div class="buttons d-flex justify-content-between align-items-center">
-                                    <a href="https://maps.app.goo.gl/LtfVENTcRu9z6bAH9?g_st=ic" class="btn-map" target="_blank">View on map</a>
+                                <div class="buttons d-flex flex-wrap justify-content-between align-items-center">
+                                    <a href="https://maps.app.goo.gl/LtfVENTcRu9z6bAH9?g_st=ic" class="btn-map col-12 col-lg-auto" target="_blank">View on map</a>
                                     <button type="button" onclick="submitFormBranch('Sheraton')" data-event="cta-modal__click-whatsapp" class="btn-reset btn-whatsapp align-self-end col-12 col-lg-auto text-center">
                                         <img src="/img/locations/wa.svg" alt="WhatsApp" width="13" height="13" loading="lazy">
                                         Book now
