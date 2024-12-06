@@ -1,0 +1,471 @@
+@charset "UTF-8";
+
+:root {
+    --g: 2.5rem;
+}
+
+body {
+    color: var(--warm-white);
+}
+
+/* header+hero */
+
+.hero {
+    @media (max-width: 767.67px) {
+        padding-bottom: 5rem;
+    }
+}
+
+.hero_background {
+    position: relative;
+    background-image: url('../img/page-massage-1.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: linear-gradient(360deg, rgba(8, 18, 38, 0%) 0%, rgba(8, 18, 38, 70%) 33%);
+        z-index: 1;
+    }
+}
+
+.hero_background-2 {
+    position: relative;
+    background-image: url('../img/page-massage-2.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: linear-gradient(360deg, rgba(8, 18, 38, 0%) 0%, rgba(8, 18, 38, 70%) 33%);
+        z-index: 1;
+    }
+}
+
+.hero_background-3 {
+    position: relative;
+    background-image: url('../img/beauty-spa-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: linear-gradient(360deg, rgba(8, 18, 38, 0%) 0%, rgba(8, 18, 38, 70%) 33%);
+        z-index: 1;
+    }
+}
+
+.hero__tittle-block {
+    margin-bottom: 5rem;
+
+    @media (max-width: 767.67px) {
+        margin-bottom: 2.5rem;
+    }
+}
+
+.hero__text {
+    margin-bottom: 2.5rem;
+}
+
+.hero__tittle-text {
+    margin-bottom: 0;
+}
+
+.hero__text-alter {
+    font-family:var(--second-family);
+    font-size:25px
+}
+
+
+/* Types */
+
+.types {
+    padding: 5rem 0;
+    background-image: url('../img/massage-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    @media (max-width: 767.67px) {
+        padding: 2.5rem 0;
+    }
+}
+
+.types__gap {
+    gap: var(--g);
+
+}
+
+.types__item {
+    max-width: 440px;
+
+    @media (min-width: 767.67px) and (max-width: 991.67px) {
+        max-width: calc((100% - var(--g)) / 2);
+    }
+
+    @media (max-width: 576px) {
+        max-width: 345px;
+    }
+}
+
+.types__tittle {
+    padding: 1.25rem 0;
+    font-size: 22px;
+    line-height: 1.23;
+    border-bottom: 1px solid var(--warm-white);
+    flex: 1;
+}
+
+.types__text {
+    padding: 1.25rem 0;
+    font-size: 22px;
+    line-height: 1.23;
+
+    span {
+        padding-left: 0.75rem;
+        color: var(--ginger);
+    }
+}
+
+.types__btn {
+    width: fit-content;
+    padding: 15px 82px;
+    text-align: center;
+
+    @media (max-width: 767.67px) {
+        width: auto;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+    }
+}
+
+/* choose-options */
+
+.choose-options {
+    padding-top: 5rem;
+
+    @media (max-width: 767.67px) {
+        padding-top: 2.5rem;
+    }
+}
+
+
+@media (max-width: 991.67px) {
+    .hero__tittle {
+        font-size: 70px !important;
+    }
+
+    .hero__tittle-text {
+        font-size: 25px !important;
+    }
+
+    .hero__text, .types__text {
+        font-size: 16px;
+    }
+}
+
+/* Lockation */
+
+.location__bg {
+    background-image: url("/img/massage-bg.jpg");
+}
+
+/* choose-bath */
+
+.choose__background-1 {
+    padding: 3.125rem 0 2.5rem;
+    background-image: url("../img/page-massage-3.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    svg {
+        left: 0;
+        bottom: -4rem;
+    }
+
+}
+
+.choose__background-2 {
+    padding: 3.125rem 0 2.5rem;
+    background-image: url("../img/page-massage-4.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    svg {
+        left: 0;
+        bottom: -4rem;
+    }
+}
+
+.choose-bath {
+    margin-top: 5rem;
+
+    @media (max-width: 767.67px) {
+        width: auto;
+        margin-top: 2.5rem;
+    }
+}
+
+.choose-bath-block {
+    @media (max-width: 576px) {
+        max-width: 345px;
+    }
+}
+
+.choose-bath__tittle {
+    font-family: var(--second-family);
+    font-size: 50px;
+    text-transform: uppercase;
+    margin-bottom: 2.5rem;
+
+    @media (max-width: 767.67px) {
+        margin-bottom: 1.25rem;
+    }
+}
+
+.choose-bath__text-block {
+    padding-bottom: 2.5rem;
+    margin-bottom: 2.5rem;
+    border-bottom: 1px solid var(--warm-white);
+
+    @media (max-width: 767.67px) {
+        padding-bottom: 0;
+        margin-bottom: 1.25rem;
+        border-bottom: unset;
+    }
+}
+
+.choose-bath__text {
+    @media (max-width: 767.67px) {
+        margin-bottom: 1.25rem;
+        border-bottom: 1px solid var(--warm-white);
+    }
+}
+
+.choose-bath__btn {
+    padding: 15px 82px;
+    text-align: center;
+
+    @media (max-width: 767.67px) {
+        width: 100%;
+    }
+}
+
+/* packages */
+
+.packages {
+    margin: 0;
+    padding: 5rem 0;
+    background-image: url('../img/contacts-1.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.packages__btn-scnd {
+    padding: 15px 46px;
+
+    @media (max-width: 991.67px) {
+        margin-left: 0;
+        width: 100%;
+    }
+}
+
+/* Bath ritual */
+
+.bath__rituals {
+    padding: 5rem 0;
+
+    @media (max-width: 767.67px) {
+        padding: 2.5rem 0;
+    }
+}
+
+.ritual__tittle-block {
+    p {
+        font-family: var(--second-family);
+        font-size: 20px;
+    }
+
+}
+
+.ritual__tittle {
+    position: relative;
+    padding-bottom: 2.5rem;
+    margin-bottom: 2.5rem;
+    font-family: var(--second-family);
+    font-size: 50px;
+    text-transform: uppercase;
+    border-bottom: 1px solid var(--warm-white);
+}
+
+.ritual__tittle-text {
+    left: 7.5rem;
+}
+
+.ritual__text-block {
+    margin-bottom: 5.3125rem;
+}
+
+.ritual__text {
+    font-size: 22px;
+    line-height: 123%;
+
+    &:not(:last-child) {
+        margin-bottom: 2rem;
+    }
+
+    @media (max-width: 767.76px) {
+        font-size: 16px;
+    }
+}
+
+/* best__beauty */
+
+.best__beauty, .massage__overview {
+    padding: 5rem 0;
+
+    @media (max-width: 767.67px) {
+        padding: 2.5rem 0;
+    }
+}
+
+
+/* relax-and-renew */
+
+.relax__renew {
+    padding: 5rem 0;
+    position: relative;
+    background-image: url('../img/massage-bg-2.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: var(--dark-blue);
+
+    @media (max-width: 767.67px) {
+        padding: 2.5rem 0;
+    }
+}
+
+.relax__renew-tittle {
+    font-family: var(--second-family);
+    font-size: 50px;
+    text-transform: uppercase;
+
+    @media (max-width: 991.76px) {
+        padding-bottom: 2.5rem;
+    }
+}
+
+.relax__renew-text {
+    padding: 2.5rem 0;
+    font-size: 22px;
+    line-height: 123%;
+    border-top: 1px solid var(--dark-blue);
+
+    @media (max-width: 767.76px) {
+        font-size: 16px;
+    }
+
+    p {
+        &:not(:last-child) {
+            margin-bottom: 2rem;
+        }
+    }
+}
+
+/* massage__overview */
+
+.massage__overview {
+    a {
+        padding: 15px 45px;
+    }
+}
+
+.photo__block {
+    left: -11%;
+    transition: left 0.3 ease, right 0.3 ease;
+
+    &:last-of-type {
+        left: unset;
+        right: -11%;
+    }
+
+    @media (max-width: 1820px) {
+        left: -15%;
+
+        &:last-of-type {
+            left: unset;
+            right: -15%;
+        }
+    }
+
+    @media (max-width: 1760px) {
+        left: -20%;
+
+        &:last-of-type {
+            left: unset;
+            right: -20%;
+        }
+    }
+
+    @media (max-width: 1640px) {
+        left: -25%;
+
+        &:last-of-type {
+            left: unset;
+            right: -25%;
+        }
+    }
+
+    @media (max-width: 1530px) {
+        left: -30%;
+
+        &:last-of-type {
+            left: unset;
+            right: -30%;
+        }
+    }
+
+    @media (max-width: 1440px) {
+        display: none;
+    }
+
+    @media (max-width: 991.67px) {
+        &:last-of-type {
+            display: block;
+            position: static !important;
+            order: 3;
+            text-align: center;
+            width: 100%;
+        }
+    }
+}

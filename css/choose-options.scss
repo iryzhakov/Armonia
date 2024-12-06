@@ -1,0 +1,123 @@
+/* Choose-options block */
+
+.choose-options {
+    padding-bottom:  5rem;
+    background-color: var(--dark-blue);
+
+    @media (max-width: 767.98px) {
+        padding-bottom: 2.5rem;
+    }
+
+}
+
+.options__img {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.options__tittle {
+    position: relative;
+    margin-bottom: 2.5rem;
+    font-family: var(--second-family);
+    color: var(--ginger);
+    font-size: 50px !important;
+    z-index: 2;
+}
+
+.options__text {
+    position: relative;
+    margin-bottom: 2.5rem;
+    font-size: 22px;
+    line-height: 123%;
+    z-index: 2;
+}
+
+.options__button {
+    padding: 15px 69px;
+}
+
+.options__block {
+    padding: 2.5rem 0;
+    margin-top: 5rem;
+
+    @media (max-width: 991.67px) {
+        padding: 4.75rem 0 0;
+        margin-top: 2.5rem;
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 95%;
+        height: 2px;
+        background-color: var(--warm-white);
+        opacity: 0.2;
+
+        @media (max-width: 991.67px) {
+            width: calc(100% - 93px);
+        }
+    }
+
+    svg {
+        position: absolute;
+        left: -3rem;
+        top: 0;
+
+        @media (max-width: 991.67px) {
+            left: 0;
+        }
+    }
+
+    &:last-of-type {
+        padding: 0;
+        margin-top: 5rem;
+
+        @media (max-width: 991.67px) {
+            padding: 0;
+            margin-top: 1rem;
+        }
+
+        svg {
+            position: absolute;
+            right: -3rem;
+            bottom: 0;
+            left: unset;
+            top: unset;
+
+
+            @media (max-width: 991.67px) {
+                right: 0;
+            }
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            top: unset;
+            right: unset;
+            width: 95%;
+            height: 2px;
+            background-color: var(--warm-white);
+            opacity: 0.2;
+
+            @media (max-width: 991.67px) {
+                width: calc(100% - 93px);
+            }
+        }
+    }
+}
+
+.options__block-img {
+    @media (max-width: 767.67px) {
+        overflow: hidden;
+        max-height: 233px;
+
+    }
+}
